@@ -40,29 +40,21 @@ section {
    
   }
 
-.sobre{
-   
-    width: auto;
-    margin-left: 3cm;
-    display: inline;
-    margin-bottom: 0px;
-    
-
+  .sobre {
+    border-radius: 15px;
+    background-color: blue;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    transition: transform 0.3s ease; /* para animación suave */
+  }
   
-    .mi-boton{
-        
-        border-radius: 15px;
-        color: rgba(26, 107, 255, 0.712);
-        border: none;
-        
-        
-    }   
-
-    .mi-boton:hover{
-        transform: translateY(-5px); /* lo levanta */
-       
-    }
-}
+  .sobre:hover {
+    transform: translateX(-50%) translateY(-5px); /* solo se levanta, no se corre al costado */
+  }
+  
 
 
 

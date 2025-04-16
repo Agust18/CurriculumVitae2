@@ -21,7 +21,6 @@
 </head>
 <body class="">
     <nav class="navbar custom-navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        >
         <div class="container-fluid">    
           <a class="navbar-brand text-white fw-bold " href="#">FULL STACK DEVELOPER</a>
           <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -55,8 +54,8 @@
   </header>
 
 <section id="sobre-mi" class="py-5 bg-dark text-light">
-    <div class="sobre">
-        <button class="btn btn-dark btn-sm mi-boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><strong>CLICK AQUI</strong></button>
+    
+        
         <div class="offcanvas offcanvas-start bg-dark text-white" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
                 
@@ -68,20 +67,31 @@
                 </p>
             </div>
         </div>
-    </div>
-    <div class="container">
-      <h2 class="text-center mb-4" data-aos="fade-up" style="margin-left: 4cm; ";">Sobre mí</h2>
-      <div class="row align-items-center">
-        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
-          <img src="imagenes/gatito.jpg" alt="Foto de Agustín" class="img-fluid rounded-4 shadow" style="width: 250px; height: 200px; margin-bottom:15px; object-fit: cover;">
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <p>Soy un desarrollador web junior con muchas ganas de seguir aprendiendo y creciendo en este mundo. Me apasiona crear sitios web modernos, responsivos y funcionales.</p>
-          <p>Manejo tecnologías como <strong>HTML, CSS, Bootstrap, JavaScript</strong> y <strong>PHP</strong>. Actualmente estoy practicando integración con bases de datos y animaciones para mejorar la experiencia del usuario.</p>
-          <p>También estoy empezando con <strong>MongoDB</strong> , <strong>phyton</strong>, ¡porque nunca hay que dejar de aprender!</p>
-        </div>
-      </div>
-    </div>
+        
+        <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-md-6 mb-4 mb-md-0 mx-auto d-block text-center position-relative" data-aos="fade-right">
+                <!-- Botón completamente fuera de la imagen, arriba -->
+                <button class="btn btn-dark btn-sm  position-absolute sobre " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  <strong>CLICK AQUÍ</strong>
+                </button>
+                <img src="imagenes/gatito.jpg" alt="Foto de Agustín" class="img-fluid rounded-4 shadow" style="width: 250px; height: 200px; margin-bottom:15px; object-fit: cover;">
+              </div>
+          
+              <div class="col-md-6" data-aos="fade-left">
+                <h2 class="text-center mb-4" data-aos="fade-up">Sobre mí</h2>
+                <p>Soy un desarrollador web junior con muchas ganas de seguir aprendiendo y creciendo en este mundo. Me apasiona crear sitios web modernos, responsivos y funcionales.</p>
+                <p>Manejo tecnologías como <strong>HTML, CSS, Bootstrap, JavaScript</strong> y <strong>PHP</strong>. Actualmente estoy practicando integración con bases de datos y animaciones para mejorar la experiencia del usuario.</p>
+                <p>También estoy empezando con <strong>MongoDB</strong>, <strong>Python</strong>, ¡porque nunca hay que dejar de aprender!</p>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+
+    
+          
 </section>
   
 
