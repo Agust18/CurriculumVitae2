@@ -9,14 +9,21 @@ html, body {
 
 .custom-navbar {
     position: sticky;
-    top: 50px; /* espacio entre el navbar y el borde superior */
-    z-index: 1000;
-    width: 50%; /* no ocupa todo el ancho */
-    margin: 0 auto; /* centrado */
-    backdrop-filter: blur(10px); /* opcional: efecto borroso detrás */
-    background-color: rgba(33, 37, 41, 0.281) !important; /* mismo color que bg-dark con un poco de transparencia */
-    transition: all 0.3s ease;
-  
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(33, 37, 41, 0.281) !important;
+  transition: all 0.3s ease;
+}
+
+/* Para pantallas medianas hacia arriba, centrado y más angosto */
+@media (min-width: 768px) {
+    .custom-navbar {
+      width: 60%;
+      margin: 0 auto;
+      top: 50px;
+    }
 }
 
 /* Ajustar padding del header */
