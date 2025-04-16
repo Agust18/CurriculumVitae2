@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agustín Camera | Portfolio</title>
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tu estilo personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+    <nav class="navbar navbar-expand-lg custom-navbar text-white shadow-sm rounded-4 ">
+        <div class="container">    
+          <a class="navbar-brand text-white fw-bold " href="#">FULL STACK DEVELOPER</a>
+          <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white " href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#sobre-mi">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+
+  <!-- HEADER -->
+  <header class="d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 class="animate__animated animate__fadeInDown">Hola, soy Agustín Camera</h1>
+      <p class="lead animate__animated animate__fadeInUp">Desarrollador web apasionado por crear experiencias increíbles.</p>
+      <button href="skillsOffcanvas" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#skillsOffcanvas" aria-controls="skillsOffcanvas"></a>Capacidades y Soft-skills</button>
+    </div>
+  </header>
+
+<section id="sobre-mi" class="py-5 bg-dark text-light">
+    <div class="sobre">
+        <button class="btn btn-dark btn-sm mi-boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><strong>CLICK AQUI</strong></button>
+        <div class="offcanvas offcanvas-start bg-dark text-white" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column  ">
+                <img src="imagenes/Captura de pantalla 2025-02-24 185844.png" class="rounded mx-auto d-block" alt="..." style="width: 120px; height: 120px; margin-bottom:25px; margin-top: 0px; object-fit: cover;">
+                <p>Estudiante del último año de la Tecnicatura en Programación en la UTN.<br>Me considero  perseverante, curioso, autodidacta y  <strong>ambicioso</strong><br> Disfruto resolviendo problemas, aprendiendo y enfrentando nuevos desafíos para seguir <strong>creciendo</strong> Tengo buena capacidad para el trabajo en equipo y la colaboración
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up" style="margin-left: 4cm; ";">Sobre mí</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+          <img src="imagenes/gatito.jpg" alt="Foto de Agustín" class="img-fluid rounded-4 shadow" style="width: 250px; height: 200px; margin-bottom:15px; object-fit: cover;">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <p>Soy un desarrollador web junior con muchas ganas de seguir aprendiendo y creciendo en este mundo. Me apasiona crear sitios web modernos, responsivos y funcionales.</p>
+          <p>Manejo tecnologías como <strong>HTML, CSS, Bootstrap, JavaScript</strong> y <strong>PHP</strong>. Actualmente estoy practicando integración con bases de datos y animaciones para mejorar la experiencia del usuario.</p>
+          <p>También estoy empezando con <strong>MongoDB</strong> , <strong>phyton</strong>, ¡porque nunca hay que dejar de aprender!</p>
+        </div>
+      </div>
+    </div>
+</section>
+  
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="py-5  text-light "  >
+    <div class="container" >
+      <div class="row g-4" >
+        <div class="col-md-6" data-aos="zoom-in" >
+          <div class="card bg-dark text-light h-100 shadow ">
+            <img src="imagenes/enterate.png" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Web de Noticias</h5>
+              <p class="card-text flex-grow-1">Una web para gestionar noticias, con funciones de usuario y administrador.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary me-2">Ver</a>
+                <a href="https://github.com/Agust18/miWeb-noticias" class="btn btn-outline-light" target="_blank">Ver Código</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in">
+          <div class="card bg-dark text-light h-100 shadow">
+            <img src="imagenes/agenda.png" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Agenda de Turnos</h5>
+              <p class="card-text flex-grow-1">Sistema para gestionar usuarios y turnos, con validaciones y base de datos.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-primary me-2">Ver</a>
+                <a href="https://github.com/Agust18/Agenda" class="btn btn-outline-light" target="_blank">Ver Código</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+<section id="contacto" class="py-5 bg-dark text-light">
+    <div class="container text-center">
+      <h2 class="mb-4" data-aos="fade-up">Contacto</h2>
+      <p class="mb-4" data-aos="fade-up">Podés encontrarme en mis redes o escribirme directamente:</p>
+        <div class="d-flex justify-content-center gap-4 fs-3" data-aos="zoom-in">
+            <a href="https://github.com/Agust18" target="_blank" class="text-light">
+            <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/agustin-camera" target="_blank" class="text-light">
+            <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://wa.me/2352506499?text=Hola%20espero%20tu%20mensaje" target="_blank" class="text-light">
+            <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="mailto:AgustinCamera16@hotmail.com" class="text-light">
+            <i class="bi bi-envelope-fill"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="skillsOffcanvas" aria-labelledby="skillsOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="skillsOffcanvasLabel">Mis Capacidades y Soft Skills</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <h6>⚙️ Capacidades Técnicas:</h6>
+      <ul>
+        <li>HTML, CSS, Bootstrap, JavaScript</li>
+        <li>PHP, MySQL</li>
+        <li>Manejo básico de Git</li>
+        <li>MongoDB (aprendiendo)</li>
+      </ul>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500" data-bs-pause="false">
+        <div class="carousel-inner" style="margin-bottom: 10px;">
+            <div class="carousel-item active">
+                <img src="imagenes/javascript.jpg" class="d-block w-100" alt="" style="width: 120px; height: 120px; margin-bottom:15px; margin-top: 0px; object-fit:contain;">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/php.png" class="d-block w-100" alt="..." style="width: 120px; height: 120px; margin-bottom: 15px; object-fit: contain;">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/python.webp" class="d-block w-100" alt="..." style="width: 120px; height: 120px;  margin-bottom: 15px; object-fit: contain;">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/html.jpg" class="d-block w-100" alt="..." style="width: 120px; height: 120px;  margin-bottom: 15px; object-fit: contain;">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/css.jpg" class="d-block w-100" alt="..." style="width: 120px; height: 120px;  margin-bottom: 15px; object-fit: contain;">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/git.jpg" class="d-block w-100" alt="..." style="width: 120px; height: 120px;  margin-bottom: 15px; object-fit: contain;">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/mysql.jpg" class="d-block w-100" alt="..." style="width: 120px; height: 120px;  margin-bottom: 15px; object-fit: contain;">
+            </div>
+        </div>
+    </div>
+  
+      <h6>🧠 Soft Skills:</h6>
+      <ul>
+        <li>Perseverancia y curiosidad</li>
+        <li>Autodidacta</li>
+        <li>Buena comunicación</li>
+        <li>Trabajo en equipo</li>
+        <li>Resolución de problemas</li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  
+
+<footer class="bg-dark text-light text-center py-4">
+<p>&copy; 2025 Agustín Camera. Todos los derechos reservados.</p>
+</footer>
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
+
+
