@@ -1,60 +1,89 @@
 html, body {
-    margin: 0px;
-    padding: 0px;
-    background-color: rgba(68, 5, 170, 0.062);
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
- }
+  height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+  background-color: #111; /* El color de fondo de toda la página */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
 
-
-
+/* Navbar con fondo semitransparente */
 .custom-navbar {
-    position: sticky;
+  padding: 0;
+  margin: 0;
+  position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
   backdrop-filter: blur(10px);
-  background-color: rgba(33, 37, 41, 0.281) !important;
+  background-color: rgba(4, 7, 238, 0.384) !important;
   transition: all 0.3s ease;
+  border-radius: 50px;
 }
 
-/* Para pantallas medianas hacia arriba, centrado y más angosto */
-@media (min-width: 768px) {
-    .custom-navbar {
-      width: 60%;
-      margin: 0 auto;
-      top: 50px;
-    }
-}
-
-/* Ajustar padding del header */
+/* Header con fondo oscuro */
 header {
-    margin-top: 0;
-    min-height: 70vh; /* Puedes reducir el 90% si lo ves necesario */
-    padding-top: 0; /* Ajusta el padding superior */
-
+  
+  padding: 70px ;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
+.container{
+  margin-top: 20px;
+}
+
+
+/* Para pantallas medianas y más grandes, centrar y reducir el navbar */
+@media (min-width: 768px) {
+  .custom-navbar {
+    width: 50%;
+    margin: 0 auto;
+    top: 30px;
+  }
+}
+
+/* Contenedor con padding adaptable */
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* Secciones con fondo oscuro y espaciado */
 section {
-    scroll-margin-top: 100px; /* o lo que mida tu navbar + margen deseado */
-   
-   
-  }
+  scroll-margin-top: 100px; /* Ajusta el desplazamiento del navbar */
+  padding: 20px 0;
+  background-color: #111; /* Fondo de las secciones */
+}
 
-  .sobre {
-    border-radius: 15px;
-    background-color: blue;
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    transition: transform 0.3s ease; /* para animación suave */
-  }
-  
-  .sobre:hover {
-    transform: translateX(-50%) translateY(-5px); /* solo se levanta, no se corre al costado */
-  }
-  
+/* Elemento 'sobre' con estilo flotante y animación */
+.sobre {
+  border-radius: 15px;
+  background-color: blue;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.sobre:hover {
+  transform: translateY(-5px); /* sin mover en X */
+}
 
 
 
+
+.carousel-inner img {
+  border-radius: 10px;
+  background-color: #222;
+  padding: 5px;
+}
+
+#contacto a:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
