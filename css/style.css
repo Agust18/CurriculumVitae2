@@ -1,12 +1,15 @@
 html, body {
-  height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+  height: auto;
+  min-height: 100vh;
+ 
   background-color: #111; /* El color de fondo de toda la página */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
 
 /* Navbar con fondo semitransparente */
 .custom-navbar {
-  padding: 0;
+ 
+  padding: 30;
   margin: 0;
   position: sticky;
   top: 0;
@@ -15,7 +18,7 @@ html, body {
   backdrop-filter: blur(10px);
   background-color: rgba(4, 7, 238, 0.384) !important;
   transition: all 0.3s ease;
-  border-radius: 50px;
+  border-radius: 40px;
 }
 
 /* Header con fondo oscuro */
@@ -40,6 +43,9 @@ header {
     width: 50%;
     margin: 0 auto;
     top: 30px;
+    position: sticky;
+    
+
   }
 }
 

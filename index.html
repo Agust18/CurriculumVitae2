@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agustín Camera | Portfolio</title>
   
     <!-- Font Awesome -->
@@ -50,7 +50,7 @@
   <header class=" align-items-center  justify-content-center text-center">
     
     <div class="container">
-      <h1 class="animate__animated animate__fadeInDown"></h1>
+      <h1 class="animate__animated animate__fadeInDown">Hola soy Agustin</h1>
       <p class="lead animate__animated animate__fadeInUp">Desarrollador web apasionado por crear experiencias increíbles.</p>
       <button href="skillsOffcanvas" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#skillsOffcanvas" aria-controls="skillsOffcanvas">Capacidades y Soft-skills</button>
     </div>
@@ -214,6 +214,25 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+<script>
+  AOS.init();
+  
+  // Script para cerrar el navbar cuando se hace click en un link
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(function(navLink) {
+    navLink.addEventListener('click', function() {
+      var navbarCollapse = document.getElementById('navbarNav');
+      var bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+      if (bsCollapse) {
+        bsCollapse.hide();
+      }
+    });
+  });
+</script>
+
+
+
+
+
 
 <script>
     AOS.init();
