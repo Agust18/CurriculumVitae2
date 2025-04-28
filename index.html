@@ -215,13 +215,14 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
 <script>
+  // Inicializar AOS (Animate On Scroll)
   AOS.init();
-  
-  // Script para cerrar el navbar cuando se hace click en un link
+
+  // Cerrar el navbar cuando se hace clic en un link
   document.querySelectorAll('.navbar-nav .nav-link').forEach(function(navLink) {
     navLink.addEventListener('click', function() {
-      var navbarCollapse = document.getElementById('navbarNav');
-      var bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+      const navbarCollapse = document.getElementById('navbarNav');
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
       if (bsCollapse) {
         bsCollapse.hide();
       }
@@ -229,15 +230,6 @@
   });
 </script>
 
-
-
-
-
-
-<script>
-    AOS.init();
-</script>
-</body>
 </html>
 
 

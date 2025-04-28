@@ -9,16 +9,17 @@ html, body {
 /* Navbar con fondo semitransparente */
 .custom-navbar {
  
-  padding: 30;
+  /* padding: 30; */
   margin: 0;
   position: sticky;
-  top: 0;
+  top: 30px;
   z-index: 1000;
   width: 100%;
   backdrop-filter: blur(10px);
   background-color: rgba(4, 7, 238, 0.384) !important;
   transition: all 0.3s ease;
   border-radius: 40px;
+  
 }
 
 /* Header con fondo oscuro */
