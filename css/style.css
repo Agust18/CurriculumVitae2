@@ -1,14 +1,34 @@
 html, body {
   height: auto;
   min-height: 100vh;
- 
   background-color: #111; /* El color de fondo de toda la página */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-family: 'Poppins', sans-serif; /* Cambiar a Poppins, o cualquier otra fuente que prefieras */
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; /* Cambiar a una fuente diferente solo para los encabezados */
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #0d6efd; /* Azul brillante para los encabezados */
+}
+
+a {
+  color: #0d6efd; /* Azul para los enlaces */
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
 
 /* Navbar con fondo semitransparente */
 .custom-navbar {
- 
   /* padding: 30; */
   margin: 0;
   position: sticky;
@@ -16,7 +36,7 @@ html, body {
   z-index: 1000;
   width: 100%;
   backdrop-filter: blur(10px);
-  background-color: rgba(4, 7, 238, 0.384) !important;
+  background-color: rgba(4, 7, 238, 0.5) !important;
   transition: all 0.3s ease;
   border-radius: 40px;
   
@@ -24,14 +44,15 @@ html, body {
 
 /* Header con fondo oscuro */
 header {
-  
-  padding: 70px ;
+  padding: 50px ;
   background-color: #111;
   color: white;
   text-align: center;
   position: relative;
   z-index: 1;
 }
+
+
 
 .container{
   margin-top: 20px;
@@ -63,9 +84,10 @@ header {
 
 /* Secciones con fondo oscuro y espaciado */
 section {
+  background-color: #1a1a1a; /* Gris oscuro más suave que el negro puro */
   scroll-margin-top: 100px; /* Ajusta el desplazamiento del navbar */
-  padding: 20px 0;
-  background-color: #111; /* Fondo de las secciones */
+  padding: 40px 0; /* Aumenta el espaciado para secciones */
+  margin-bottom: 25px; /* Añade margen inferior entre secciones */
 }
 
 /* Elemento 'sobre' con estilo flotante y animación */
@@ -78,6 +100,11 @@ section {
 
 .sobre:hover {
   transform: translateY(-5px); /* sin mover en X */
+}
+
+.carousel-inner img {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra sutil para las imágenes */
 }
 
 
