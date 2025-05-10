@@ -1,50 +1,84 @@
+
+/* General */
 html, body {
   height: auto;
   min-height: 100vh;
-  background-color: #111; /* El color de fondo de toda la página */
-  font-family: 'Poppins', sans-serif; /* Cambiar a Poppins, o cualquier otra fuente que prefieras */
+  background-color: #111; /* Color de fondo oscuro para toda la página */
+  font-family: 'Poppins', sans-serif; /* Fuente Poppins para texto principal */
+  color: #fff; /* Color de texto blanco */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif; /* Cambiar a una fuente diferente solo para los encabezados */
+  font-family: 'Roboto', sans-serif; /* Fuente Roboto para encabezados */
+  color: #0d6efd; /* Azul brillante para encabezados */
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease; /* Transición de color suave */
 }
 
+h1:hover, h2:hover, h3:hover {
+  color: #0b5ed7; /* Cambio de color al pasar el mouse */
+  cursor: pointer;
+}
 
+/* Texto general */
 p {
   font-family: 'Roboto', sans-serif;
-}
-
-h1, h2, h3 {
-  color: #0d6efd; /* Azul brillante para los encabezados */
+  line-height: 1.6;
+  color: #ddd; /* Color de texto más suave */
 }
 
 a {
   color: #0d6efd; /* Azul para los enlaces */
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Efecto de hover */
+  color: #0b5ed7; /* Cambiar color al pasar el mouse */
 }
 
+/* Elemento con sombra y borde redondeado */
+.tille {
+  box-shadow: 5px 5px 20px rgba(13, 110, 253, 0.5);
+  border-radius: 20px;
+  display: inline-block;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: rgba(13, 110, 253, 0.1); /* Fondo sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-/* Navbar con fondo semitransparente */
+.tille:hover {
+  transform: translateY(-5px); /* Desplazamiento sutil al pasar el mouse */
+  box-shadow: 5px 5px 20px rgba(13, 110, 253, 0.8); /* Sombra más intensa */
+}
+
+/* Navbar */
 .custom-navbar {
-  /* padding: 30; */
   margin: 0;
   position: sticky;
   top: 30px;
   z-index: 1000;
   width: 100%;
   backdrop-filter: blur(10px);
-  background-color: rgba(4, 7, 238, 0.5) !important;
-  transition: all 0.3s ease;
+  background-color: rgba(4, 7, 238, 0.7);
   border-radius: 40px;
-  
+  transition: all 0.3s ease;
 }
 
-/* Header con fondo oscuro */
+/* Navbar en pantallas grandes */
+@media (min-width: 768px) {
+  .custom-navbar {
+    width: 50%;
+    margin: 0 auto;
+    top: 20px;
+  }
+}
+
+/* Header */
 header {
-  padding: 50px ;
+  padding: 80px 0;
   background-color: #111;
   color: white;
   text-align: center;
@@ -52,72 +86,160 @@ header {
   z-index: 1;
 }
 
+header h1 {
+  font-size: 3rem;
+  animation: fadeInDown 1s ease-out;
+}
 
+header p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.5s ease-out;
+}
 
-.container{
+/* Contenedor */
+.container {
   margin-top: 20px;
 }
 
-
-/* Para pantallas medianas y más grandes, centrar y reducir el navbar */
-@media (min-width: 768px) {
-  .custom-navbar {
-    width: 50%;
-    margin: 0 auto;
-    top: 30px;
-    position: sticky;
-    
-
-  }
-}
-
-/* Contenedor con padding adaptable */
-.container {
-  padding: 0 20px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    padding: 0 40px;
-  }
-}
-
-/* Secciones con fondo oscuro y espaciado */
+/* Secciones */
 section {
-  background-color: #1a1a1a; /* Gris oscuro más suave que el negro puro */
-  scroll-margin-top: 100px; /* Ajusta el desplazamiento del navbar */
-  padding: 40px 0; /* Aumenta el espaciado para secciones */
-  margin-bottom: 25px; /* Añade margen inferior entre secciones */
-}
-
-/* Elemento 'sobre' con estilo flotante y animación */
-.sobre {
-  border-radius: 15px;
-  background-color: blue;
-  margin-top: 10px;
+  background-color: #1a1a1a; /* Fondo gris oscuro */
+  scroll-margin-top: 100px;
+  padding: 60px 0;
+  margin-bottom: 30px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
+section:hover {
+  transform: translateY(-10px); /* Desplazamiento al pasar el mouse */
+}
+
+/* Animación para el hover de los elementos 'sobre' */
+.sobre {
+  border-radius: 15px;
+  background-color: #0d6efd;
+  margin-top: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 .sobre:hover {
-  transform: translateY(-5px); /* sin mover en X */
+  transform: translateY(-5px);
+  background-color: #0b5ed7; /* Fondo más oscuro al pasar el mouse */
 }
 
-.carousel-inner img {
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra sutil para las imágenes */
-}
-
-
-
-
+/* Carrusel */
 .carousel-inner img {
   border-radius: 10px;
   background-color: #222;
   padding: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.carousel-inner img:hover {
+  transform: scale(1.05); /* Escala al pasar el mouse */
+}
+
+/* Contacto */
+#contacto a:hover {
+  color: #0d6efd;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#contacto a {
+  color: #ddd;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 #contacto a:hover {
-  color: #0d6efd;
-  transform: scale(1.2);
-  transition: all 0.2s ease-in-out;
+  color: #0d6efd; /* Azul brillante al pasar el mouse */
 }
+
+/* Botón Primario */
+button.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05); /* Escala el botón al pasar el mouse */
+}
+
+/* Efectos de animación */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fondo y bordes */
+footer {
+  background-color: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid #444;
+}
+
+Para mejorar el rendimiento y el diseño
+img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-text {
+  font-family: 'Roboto', sans-serif; /* Fuente limpia y moderna */
+  color: #f8f9fa; /* Texto en color blanco grisáceo para buen contraste */
+  font-size: 1rem; /* Tamaño adecuado para legibilidad */
+  line-height: 1.5; /* Espaciado entre líneas para mayor claridad */
+  margin-top: 10px; /* Separación entre el título y el texto */
+  margin-bottom: 15px; /* Separación de la parte inferior */
+  text-align: left; /* Alineación a la izquierda para mayor legibilidad */
+}
+
+.card-text a {
+  color: #0d6efd; /* Color azul para enlaces */
+  text-decoration: none; /* Eliminar subrayado */
+  transition: color 0.3s ease; /* Transición suave en color */
+}
+
+.card-text a:hover {
+  color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.img-fluid {
+  box-shadow: 15px 15px 60px #0d6efd; /* Sombra sutil, difusa y elegante */
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al interactuar */
+}
+
+.img-fluid:hover {
+  transform: scale(1.05); /* Efecto de aumento suave al pasar el ratón */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.575); /* Sombra más pronunciada cuando está en hover */
+}
+
+
