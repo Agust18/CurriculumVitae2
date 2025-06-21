@@ -6,6 +6,7 @@ html, body {
   background-color: #111; /* Color de fondo oscuro para toda la página */
   font-family: 'Poppins', sans-serif; /* Fuente Poppins para texto principal */
   color: #fff; /* Color de texto blanco */
+   scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,6 +68,12 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+.navbar-brand {
+  padding: 7px;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
 /* Navbar en pantallas grandes */
 @media (min-width: 768px) {
   .custom-navbar {
@@ -106,7 +113,7 @@ section {
   background-color: #1a1a1a; /* Fondo gris oscuro */
   scroll-margin-top: 100px;
   padding: 60px 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -146,7 +153,9 @@ section:hover {
   color: #0d6efd;
   transform: scale(1.1);
   transition: transform 0.3s ease, color 0.3s ease;
+  
 }
+
 
 #contacto a {
   color: #ddd;
@@ -205,7 +214,7 @@ footer {
   border-top: 2px solid #444;
 }
 
-Para mejorar el rendimiento y el diseño
+
 img {
   object-fit: cover;
   border-radius: 10px;
@@ -215,11 +224,13 @@ img {
   font-family: 'Roboto', sans-serif; /* Fuente limpia y moderna */
   color: #f8f9fa; /* Texto en color blanco grisáceo para buen contraste */
   font-size: 1rem; /* Tamaño adecuado para legibilidad */
-  line-height: 1.5; /* Espaciado entre líneas para mayor claridad */
+  line-height: 1.5px; /* Espaciado entre líneas para mayor claridad */
   margin-top: 10px; /* Separación entre el título y el texto */
-  margin-bottom: 15px; /* Separación de la parte inferior */
+  margin-bottom: 1.5rem; /* Separación de la parte inferior */
   text-align: left; /* Alineación a la izquierda para mayor legibilidad */
 }
+
+
 
 .card-text a {
   color: #0d6efd; /* Color azul para enlaces */
@@ -231,10 +242,11 @@ img {
   color: #0056b3; /* Color más oscuro al pasar el mouse */
 }
 
-.img-fluid {
-  box-shadow: 15px 15px 60px #0d6efd; /* Sombra sutil, difusa y elegante */
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al interactuar */
+
+.img-fluid {
+  box-shadow: 15px 15px 60px #0d6dfd65; /* Sombra sutil, difusa y elegante */
+  transition: transform 0.3s ease, box-shadow 0.8s ease; /* Transición suave al interactuar */
 }
 
 .img-fluid:hover {
