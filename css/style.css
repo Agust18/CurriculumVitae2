@@ -95,7 +95,7 @@ header {
 
 header h1 {
   font-size: 3rem;
-  animation: fadeInDown 1s ease-out;
+  animation: fadeInDown 3s ease-out;
 }
 
 header p {
@@ -171,7 +171,7 @@ section:hover {
 button.btn-primary {
   background-color: #0d6efd;
   border: none;
-  border-radius: 8px;
+  border-radius: 40px;
   font-size: 1.1rem;
   padding: 10px 20px;
   transition: background-color 0.3s ease, transform 0.3s ease;
