@@ -165,7 +165,35 @@
     </div>
   </section>
 
-  <!-- CONTACTO -->
+     <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <h2 class="section-title">Contacto</h2>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mrbawopg" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <div class="error-message" id="nombreError">Por favor, ingresa tu nombre</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError">Por favor, ingresa un email válido</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                    <div class="error-message" id="mensajeError">Por favor, escribe tu mensaje</div>
+                </div>
+                
+                <button type="submit" class="cta-button">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+  <!-- CONTACTO
 <section id="contacto" class="py-4 bg-dark text-light">
     <div class="container text-center">
       <h2 class="mb-4" data-aos="fade-up">Contacto</h2>
@@ -185,7 +213,7 @@
             </a>
         </div>
     </div>
-</section>
+</section> -->
 
 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="skillsOffcanvas" aria-labelledby="skillsOffcanvasLabel">
     <div class="offcanvas-header">
@@ -232,7 +260,18 @@
   </div>
 
 <footer class="bg-dark text-light text-center py-3">
-<p>&copy; 2025 Agustín Camera.</p>
+ <div class="footer-container">
+            <div class="copyright">
+                <p>&copy; 2025 Agustin Camera.dev. Todos los derechos reservados.</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/agustin-camera-a0258221a/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Agust18" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <!-- <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                <a href="#contacto" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
 </footer>
 <!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
